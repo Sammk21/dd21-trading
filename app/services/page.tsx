@@ -1,6 +1,6 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { ServicesOverview } from "@/components/services-overview"
+import ServicesOverview from "@/components/services-overview";
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
