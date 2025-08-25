@@ -189,10 +189,9 @@ export function ContactForm() {
             <option value="">Select a service</option>
             <option value="investment-planning">Investment Planning</option>
             <option value="options-trading">Options Trading</option>
-            <option value="retirement-planning">Retirement Planning</option>
-            <option value="tax-planning">Tax Planning</option>
-            <option value="insurance">Insurance Planning</option>
             <option value="loans">Loans & Credit</option>
+            <option value="loans">Futures Trading</option>
+            <option value="general">Spot Trading</option>
             <option value="general">General Inquiry</option>
           </select>
         </div>
