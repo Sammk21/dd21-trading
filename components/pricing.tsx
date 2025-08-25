@@ -325,16 +325,6 @@ const PricingPage = () => {
                   </ul>
                 </div>
 
-                {/* Placeholder for your contact form component */}
-                <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 sm:p-8 text-center mb-4 sm:mb-6">
-                  <p className="text-gray-600 mb-2 text-sm sm:text-base">
-                    Your Contact Form Component Goes Here
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-500">
-                    Replace this div with your contact form component
-                  </p>
-                </div>
-
                 {/* Example form structure you can replace */}
                 <div className="space-y-3 sm:space-y-4">
                   <div>
