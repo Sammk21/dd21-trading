@@ -39,90 +39,8 @@ export default function ContactPage() {
     <div className="min-h-screen">
       <Navbar />
       <main>
-        {/* Hero Section */}
-        <section className="bg-gradient-to-br from-background to-muted py-16 lg:py-24">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <Badge variant="secondary" className="mb-6">
-              Free Consultation Available
-            </Badge>
-            <h1 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-6">
-              Get In Touch
-            </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Ready to take control of your financial future? Schedule a free
-              consultation with our SEBI-registered advisors and discover
-              personalized strategies for your goals.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="text-lg px-8 py-6">
-                <Link href="#contact-form">Schedule Consultation</Link>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="text-lg px-8 py-6 bg-transparent"
-              >
-                <Link href="tel:+91-9876543210">Call Now</Link>
-              </Button>
-            </div>
-          </div>
-        </section>
-
-        {/* Contact Information Cards */}
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              {contactInfo.map((info, index) => {
-                const IconComponent = info.icon;
-                return (
-                  <Card
-                    key={index}
-                    className="text-center hover:shadow-lg transition-shadow"
-                  >
-                    <CardHeader>
-                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <IconComponent className="w-8 h-8 text-primary" />
-                      </div>
-                      <CardTitle className="font-heading text-xl">
-                        {info.title}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <div className="space-y-1 mb-4">
-                        {info.details.map((detail, idx) => (
-                          <p key={idx} className="text-muted-foreground">
-                            {detail}
-                          </p>
-                        ))}
-                      </div>
-                      <Button
-                        asChild
-                        variant="outline"
-                        size="sm"
-                        className="bg-transparent"
-                      >
-                        <Link
-                          href={info.action}
-                          target={
-                            info.action.startsWith("http")
-                              ? "_blank"
-                              : undefined
-                          }
-                        >
-                          Contact
-                        </Link>
-                      </Button>
-                    </CardContent>
-                  </Card>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
         {/* Contact Form and Map Section */}
-        <section className="py-16 bg-muted">
+        <section className="py-16 bg-muted mt-4">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
@@ -157,7 +75,7 @@ export default function ContactPage() {
                   <CardContent>
                     <div className="aspect-video rounded-lg overflow-hidden bg-muted mb-4">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9947447726!2d72.8776559!3d19.0759837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b5b2b2b2b2%3A0x1234567890abcdef!2sBusiness%20District%2C%20Mumbai!5e0!3m2!1sen!2sin!4v1234567890123"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15080.409641071416!2d73.00048425289015!3d19.103162713709594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c0da9e93097f%3A0xd54c1cc7981cf314!2sKopar%20Khairane%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1756158641780!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

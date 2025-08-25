@@ -44,11 +44,11 @@ export function Footer() {
             <div className="flex space-x-4">
               <Link
                 href="https://www.instagram.com/dd21trading/"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="text-muted-foreground hover:text-pink-500 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </Link>
-              <Link
+              {/* <Link
                 href="#"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
@@ -59,7 +59,7 @@ export function Footer() {
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -112,7 +112,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Phone className="w-4 h-4" />
-                <span>+91-9876543210</span>
+                <span>+91-8451077107</span>
               </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
