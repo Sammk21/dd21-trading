@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Space_Grotesk, DM_Sans } from "next/font/google"
 import "./globals.css"
+import WhatsAppIcon from "@/components/whatsappIcon";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -16,11 +17,11 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "FinAdvisor Pro - Transparent Financial & Trading Solutions",
+  title: "DD21 Tradings - Transparent Financial & Trading Solutions",
   description:
     "SEBI-registered research, investment, and planning services. Expert financial advisory with transparency and compliance.",
-  generator: "v0.app",
-}
+  generator: "sameer khan instagram:@abeysamm",
+};
 
 export default function RootLayout({
   children,
@@ -29,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${dmSans.variable}`}>
-      <body className="font-body antialiased">{children}</body>
+      <body className="font-body antialiased">
+        <WhatsAppIcon />
+        {children}
+      </body>
     </html>
-  )
+  );
 }

@@ -45,16 +45,24 @@ export default function ContactPage() {
             <Badge variant="secondary" className="mb-6">
               Free Consultation Available
             </Badge>
-            <h1 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-6">Get In Touch</h1>
+            <h1 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-6">
+              Get In Touch
+            </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              Ready to take control of your financial future? Schedule a free consultation with our SEBI-registered
-              advisors and discover personalized strategies for your goals.
+              Ready to take control of your financial future? Schedule a free
+              consultation with our SEBI-registered advisors and discover
+              personalized strategies for your goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="text-lg px-8 py-6">
                 <Link href="#contact-form">Schedule Consultation</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="text-lg px-8 py-6 bg-transparent">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="text-lg px-8 py-6 bg-transparent"
+              >
                 <Link href="tel:+91-9876543210">Call Now</Link>
               </Button>
             </div>
@@ -66,14 +74,19 @@ export default function ContactPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
               {contactInfo.map((info, index) => {
-                const IconComponent = info.icon
+                const IconComponent = info.icon;
                 return (
-                  <Card key={index} className="text-center hover:shadow-lg transition-shadow">
+                  <Card
+                    key={index}
+                    className="text-center hover:shadow-lg transition-shadow"
+                  >
                     <CardHeader>
                       <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                         <IconComponent className="w-8 h-8 text-primary" />
                       </div>
-                      <CardTitle className="font-heading text-xl">{info.title}</CardTitle>
+                      <CardTitle className="font-heading text-xl">
+                        {info.title}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
                       <div className="space-y-1 mb-4">
@@ -83,14 +96,26 @@ export default function ContactPage() {
                           </p>
                         ))}
                       </div>
-                      <Button asChild variant="outline" size="sm" className="bg-transparent">
-                        <Link href={info.action} target={info.action.startsWith("http") ? "_blank" : undefined}>
+                      <Button
+                        asChild
+                        variant="outline"
+                        size="sm"
+                        className="bg-transparent"
+                      >
+                        <Link
+                          href={info.action}
+                          target={
+                            info.action.startsWith("http")
+                              ? "_blank"
+                              : undefined
+                          }
+                        >
                           Contact
                         </Link>
                       </Button>
                     </CardContent>
                   </Card>
-                )
+                );
               })}
             </div>
           </div>
@@ -109,8 +134,8 @@ export default function ContactPage() {
                       Send Us a Message
                     </CardTitle>
                     <p className="text-muted-foreground">
-                      Fill out the form below and we'll get back to you within 24 hours to schedule your free
-                      consultation.
+                      Fill out the form below and we'll get back to you within
+                      24 hours to schedule your free consultation.
                     </p>
                   </CardHeader>
                   <CardContent>
@@ -139,12 +164,13 @@ export default function ContactPage() {
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="FinAdvisor Pro Office Location"
+                        title="DD21 Tradings Office Location"
                       />
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Located in the heart of Mumbai's business district, easily accessible by public transport and with
-                      ample parking facilities.
+                      Located in the heart of Mumbai's business district, easily
+                      accessible by public transport and with ample parking
+                      facilities.
                     </p>
                   </CardContent>
                 </Card>
@@ -164,15 +190,20 @@ export default function ContactPage() {
                           key={index}
                           className="flex justify-between items-center py-2 border-b border-border last:border-b-0"
                         >
-                          <span className="font-medium text-foreground">{schedule.day}</span>
-                          <span className="text-muted-foreground">{schedule.hours}</span>
+                          <span className="font-medium text-foreground">
+                            {schedule.day}
+                          </span>
+                          <span className="text-muted-foreground">
+                            {schedule.hours}
+                          </span>
                         </div>
                       ))}
                     </div>
                     <div className="mt-4 p-3 bg-red-200/30 rounded-lg">
                       <p className="text-sm text-red-600">
                         <Calendar className="w-4 h-4 inline mr-2" />
-                        Emergency consultations available by appointment outside regular hours.
+                        Emergency consultations available by appointment outside
+                        regular hours.
                       </p>
                     </div>
                   </CardContent>
@@ -189,18 +220,23 @@ export default function ContactPage() {
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
                 Frequently Asked Questions
               </h2>
-              <p className="text-xl text-muted-foreground">Quick answers to common questions about our services</p>
+              <p className="text-xl text-muted-foreground">
+                Quick answers to common questions about our services
+              </p>
             </div>
 
             <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className="font-heading text-lg">Is the initial consultation really free?</CardTitle>
+                  <CardTitle className="font-heading text-lg">
+                    Is the initial consultation really free?
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Yes, we offer a completely free 30-minute consultation to understand your financial goals and
-                    explain how our services can help you achieve them. There's no obligation to proceed.
+                    Yes, we offer a completely free 30-minute consultation to
+                    understand your financial goals and explain how our services
+                    can help you achieve them. There's no obligation to proceed.
                   </p>
                 </CardContent>
               </Card>
@@ -213,33 +249,41 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Please bring your recent salary slips, bank statements, existing investment documents, insurance
-                    policies, and any loan statements. This helps us provide more accurate advice.
+                    Please bring your recent salary slips, bank statements,
+                    existing investment documents, insurance policies, and any
+                    loan statements. This helps us provide more accurate advice.
                   </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="font-heading text-lg">How are your advisory fees structured?</CardTitle>
+                  <CardTitle className="font-heading text-lg">
+                    How are your advisory fees structured?
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Our fees are completely transparent with no hidden charges. We offer both asset-based and fixed-fee
-                    structures depending on your needs. All fees will be clearly explained during your consultation.
+                    Our fees are completely transparent with no hidden charges.
+                    We offer both asset-based and fixed-fee structures depending
+                    on your needs. All fees will be clearly explained during
+                    your consultation.
                   </p>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="font-heading text-lg">Are you really SEBI registered?</CardTitle>
+                  <CardTitle className="font-heading text-lg">
+                    Are you really SEBI registered?
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Yes, we are registered with SEBI as an Investment Advisor (Registration No: INH000001234). You can
-                    verify our registration on the SEBI website. This ensures your investments are protected under
-                    regulatory guidelines.
+                    Yes, we are registered with SEBI as an Investment Advisor
+                    (Registration No: INH000001234). You can verify our
+                    registration on the SEBI website. This ensures your
+                    investments are protected under regulatory guidelines.
                   </p>
                 </CardContent>
               </Card>
@@ -254,11 +298,17 @@ export default function ContactPage() {
               Ready to Start Your Financial Journey?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Don't wait to secure your financial future. Schedule your free consultation today and take the first step
-              towards achieving your financial goals.
+              Don't wait to secure your financial future. Schedule your free
+              consultation today and take the first step towards achieving your
+              financial goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
+              <Button
+                asChild
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8 py-6"
+              >
                 <Link href="#contact-form">Schedule Free Consultation</Link>
               </Button>
               <Button
@@ -275,5 +325,5 @@ export default function ContactPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

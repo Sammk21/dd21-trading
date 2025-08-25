@@ -1,22 +1,29 @@
-import { TrendingUp, PiggyBank, CreditCard, Shield, Users, Calculator } from "lucide-react"
+import {
+  TrendingUp,
+  PiggyBank,
+  Calculator,
+  BarChart3,
+  Activity,
+} from "lucide-react";
 
 export interface Service {
-  slug: string
-  title: string
-  description: string
-  icon: any
-  longDescription: string
-  features: string[]
-  benefits: string[]
-  whoItsFor: string[]
-  process: string[]
+  slug: string;
+  title: string;
+  description: string;
+  icon: any;
+  longDescription: string;
+  features: string[];
+  benefits: string[];
+  whoItsFor: string[];
+  process: string[];
 }
 
 export const servicesData: Service[] = [
   {
     slug: "options-trading",
     title: "Options Trading",
-    description: "Expert guidance on options strategies with risk management and market analysis.",
+    description:
+      "Expert guidance on options strategies with risk management and market analysis.",
     icon: TrendingUp,
     longDescription:
       "Our options trading service provides comprehensive guidance for both beginners and experienced traders. We focus on risk management, strategic planning, and market analysis to help you make informed decisions in the options market.",
@@ -50,7 +57,8 @@ export const servicesData: Service[] = [
   {
     slug: "investment-planning",
     title: "Investment Planning",
-    description: "Personalized investment portfolios tailored to your financial goals and risk appetite.",
+    description:
+      "Personalized investment portfolios tailored to your financial goals and risk appetite.",
     icon: PiggyBank,
     longDescription:
       "Our investment planning service creates personalized portfolios designed to meet your specific financial objectives. We consider your risk tolerance, time horizon, and financial goals to build a diversified investment strategy.",
@@ -82,111 +90,80 @@ export const servicesData: Service[] = [
     ],
   },
   {
-    slug: "loans",
-    title: "Loans & Credit",
-    description: "Assistance with personal loans, home loans, and credit optimization strategies.",
-    icon: CreditCard,
+    slug: "spot-trading",
+    title: "Spot Trading",
+    description:
+      "Instant buying and selling of assets at real-time market prices.",
+    icon: Activity,
     longDescription:
-      "Navigate the complex world of loans and credit with our expert guidance. We help you find the best loan products, optimize your credit profile, and manage debt effectively to achieve your financial objectives.",
+      "Our spot trading service allows you to buy and sell assets at current market prices with complete transparency. Designed for traders who prefer immediate settlement, this service provides deep liquidity, fast execution, and reliable trade management for various asset classes.",
     features: [
-      "Loan product comparison and selection",
-      "Credit score improvement strategies",
-      "Debt consolidation planning",
-      "EMI optimization and restructuring",
-      "Documentation and application support",
+      "Real-time order execution with minimal slippage",
+      "Access to multiple trading pairs and markets",
+      "Advanced charting and analysis tools",
+      "High liquidity for efficient trades",
+      "Secure wallet and custody solutions",
     ],
     benefits: [
-      "Access to best loan rates and terms",
-      "Improved credit profile and score",
-      "Reduced financial stress and EMI burden",
-      "Strategic debt management",
-      "Expert negotiation with lenders",
+      "Immediate ownership of assets",
+      "Simple and straightforward trading process",
+      "Transparency with real-time pricing",
+      "No contract expirations or rollover fees",
+      "Flexibility to hold or liquidate anytime",
     ],
     whoItsFor: [
-      "Home buyers seeking mortgage guidance",
-      "Individuals needing personal loans",
-      "Business owners requiring working capital",
-      "Anyone looking to optimize existing debt",
+      "Traders seeking quick entry and exit opportunities",
+      "Investors wanting to directly own digital assets",
+      "Beginners exploring straightforward trading methods",
+      "Short-term traders focused on market volatility",
     ],
     process: [
-      "Credit assessment and loan requirement analysis",
-      "Lender comparison and product selection",
-      "Application preparation and submission",
-      "Follow-up and loan closure support",
+      "Account setup and funding",
+      "Market analysis and order placement",
+      "Instant trade execution and confirmation",
+      "Asset settlement in your wallet",
     ],
   },
   {
-    slug: "insurance",
-    title: "Insurance",
-    description: "Comprehensive insurance planning for life, health, and asset protection.",
-    icon: Shield,
+    slug: "futures-trading",
+    title: "Futures Trading",
+    description:
+      "Trade contracts on future asset prices with leverage and strategic hedging.",
+    icon: BarChart3,
     longDescription:
-      "Protect yourself and your loved ones with comprehensive insurance planning. We analyze your insurance needs and recommend appropriate coverage to safeguard against life's uncertainties while optimizing costs.",
+      "Our futures trading service offers advanced opportunities to speculate or hedge using leveraged contracts. Whether you’re managing risk or aiming for higher returns, we provide the tools, insights, and professional support to help you navigate futures markets effectively.",
     features: [
-      "Insurance needs analysis and gap assessment",
-      "Product comparison across multiple insurers",
-      "Claims assistance and support",
-      "Policy review and optimization",
-      "Beneficiary planning and updates",
+      "Leverage-based trading for amplified exposure",
+      "Long and short position flexibility",
+      "Comprehensive risk management tools",
+      "Advanced order types and trading strategies",
+      "Access to major futures markets and assets",
     ],
     benefits: [
-      "Comprehensive protection coverage",
-      "Cost-effective insurance solutions",
-      "Peace of mind for you and family",
-      "Professional claims support",
-      "Regular policy optimization",
+      "Potential for higher profits with leverage",
+      "Ability to profit in both rising and falling markets",
+      "Effective hedging against spot market volatility",
+      "Portfolio diversification opportunities",
+      "Guidance from experienced trading professionals",
     ],
     whoItsFor: [
-      "Families seeking comprehensive protection",
-      "Working professionals needing coverage",
-      "Business owners protecting assets",
-      "Individuals planning for dependents",
+      "Experienced traders seeking leveraged opportunities",
+      "Investors looking to hedge against market risks",
+      "Active traders interested in short-term volatility",
+      "Portfolio managers aiming for diversification",
     ],
     process: [
-      "Insurance needs assessment",
-      "Product research and comparison",
-      "Policy selection and application",
-      "Ongoing review and optimization",
-    ],
-  },
-  {
-    slug: "retirement",
-    title: "Retirement Planning",
-    description: "Strategic retirement planning to ensure financial security in your golden years.",
-    icon: Users,
-    longDescription:
-      "Plan for a comfortable and financially secure retirement with our comprehensive retirement planning service. We help you calculate retirement needs, choose appropriate investment vehicles, and create a systematic savings strategy.",
-    features: [
-      "Retirement corpus calculation and planning",
-      "Pension and provident fund optimization",
-      "Systematic investment plan design",
-      "Post-retirement income planning",
-      "Healthcare and inflation protection",
-    ],
-    benefits: [
-      "Financial independence in retirement",
-      "Inflation-protected retirement corpus",
-      "Multiple income streams post-retirement",
-      "Healthcare cost coverage",
-      "Legacy planning for heirs",
-    ],
-    whoItsFor: [
-      "Young professionals starting career",
-      "Mid-career individuals planning ahead",
-      "Pre-retirees finalizing strategies",
-      "Anyone concerned about retirement security",
-    ],
-    process: [
-      "Retirement goal setting and timeline",
-      "Investment strategy development",
-      "Implementation and monitoring",
-      "Pre-retirement transition planning",
+      "Risk profile assessment and leverage setup",
+      "Selection of futures contracts",
+      "Position opening with real-time monitoring",
+      "Ongoing adjustments and trade settlement",
     ],
   },
   {
     slug: "tax-planning",
     title: "Tax Planning",
-    description: "Optimize your tax liability with strategic planning and investment choices.",
+    description:
+      "Optimize your tax liability with strategic planning and investment choices.",
     icon: Calculator,
     longDescription:
       "Minimize your tax burden legally and efficiently with our comprehensive tax planning service. We help you understand tax implications of investments and structure your finances for maximum tax efficiency.",
@@ -217,12 +194,12 @@ export const servicesData: Service[] = [
       "Annual review and optimization",
     ],
   },
-]
+];
 
 export function getServiceBySlug(slug: string): Service | undefined {
-  return servicesData.find((service) => service.slug === slug)
+  return servicesData.find((service) => service.slug === slug);
 }
 
 export function getAllServices(): Service[] {
-  return servicesData
+  return servicesData;
 }

@@ -9,6 +9,8 @@ import {
   Calculator,
   ChevronRight,
   ArrowRight,
+  BarChart3,
+  Activity,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -30,29 +32,22 @@ const services = [
     color: "bg-green-500",
   },
   {
-    icon: CreditCard,
-    title: "Loans & Credit",
+    slug: "spot-trading",
+    title: "Spot Trading",
     description:
-      "Assistance with personal loans, home loans, and credit optimization strategies.",
-    slug: "loans",
-    color: "bg-purple-500",
+      "Instant buying and selling of assets at real-time market prices.",
+    icon: Activity,
+    color: "bg-yellow-500",
   },
   {
-    icon: Shield,
-    title: "Insurance",
+    slug: "futures-trading",
+    title: "Futures Trading",
     description:
-      "Comprehensive insurance planning for life, health, and asset protection.",
-    slug: "insurance",
-    color: "bg-orange-500",
+      "Trade contracts on future asset prices with leverage and strategic hedging.",
+    icon: BarChart3,
+    color: "bg-pink-500",
   },
-  {
-    icon: Users,
-    title: "Retirement Planning",
-    description:
-      "Strategic retirement planning to ensure financial security in your golden years.",
-    slug: "retirement",
-    color: "bg-indigo-500",
-  },
+
   {
     icon: Calculator,
     title: "Tax Planning",

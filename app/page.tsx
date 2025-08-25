@@ -1,7 +1,7 @@
 import { Navbar } from "@/components/navbar"
 import { HeroSection } from "@/components/hero-section"
 import ServicesOverview from "@/components/services-overview";
-import { WhyChooseUs } from "@/components/why-choose-us";
+import WhyChooseUs from "@/components/why-choose-us";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
@@ -15,7 +15,7 @@ export default function HomePage() {
         <HeroSection />
         <CTASection />
         <ServicesOverview />
-        <PricingPage />¡
+        <PricingPage />
         <WhyChooseUs />
         <TestimonialsSection />
         <CTASection />

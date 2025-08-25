@@ -31,7 +31,7 @@ const PricingPage = () => {
       alerts: "5 alerts/day",
       coverage: "Bank Nifty only",
       support: "Email support",
-      risk: "Moderate",
+
       features: [
         "WhatsApp notifications",
         "Basic market analysis",
@@ -49,7 +49,6 @@ const PricingPage = () => {
       alerts: "15 alerts/day",
       coverage: "All 3 indices",
       support: "Chat + Email",
-      risk: "Moderate-High",
       features: [
         "Advanced analysis",
         "SMS + WhatsApp alerts",
@@ -68,7 +67,6 @@ const PricingPage = () => {
       alerts: "25 alerts/day",
       coverage: "All indices + sectors",
       support: "Dedicated manager",
-      risk: "High",
       features: [
         "Premium research",
         "Daily briefings",
@@ -87,7 +85,6 @@ const PricingPage = () => {
       alerts: "Unlimited",
       coverage: "Everything included",
       support: "24/7 consultant",
-      risk: "Very High",
       features: [
         "Real-time insights",
         "Personal consultant",
@@ -242,13 +239,13 @@ const PricingPage = () => {
                   </Button>
 
                   {/* Risk Level - Bottom */}
-                  <div className="flex items-center justify-center text-xs bg-gray-50 rounded-lg p-2">
+                  {/* <div className="flex items-center justify-center text-xs bg-gray-50 rounded-lg p-2">
                     <Shield className="w-3 h-3 text-orange-500 mr-1" />
                     <span className="text-gray-600">Risk: </span>
                     <span className="font-medium text-gray-700 ml-1">
                       {plan.risk}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

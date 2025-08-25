@@ -48,10 +48,19 @@ export default function ServicePage({ params }: ServicePageProps) {
                 SEBI Compliant
               </Badge>
             </div>
-            <h1 className="font-heading font-bold text-4xl md:text-5xl mb-6">{service.title}</h1>
-            <p className="text-xl leading-relaxed mb-8 text-primary-foreground/90">{service.longDescription}</p>
+            <h1 className="font-heading font-bold text-4xl md:text-5xl mb-6">
+              {service.title}
+            </h1>
+            <p className="text-xl leading-relaxed mb-8 text-primary-foreground/90">
+              {service.longDescription}
+            </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
+              <Button
+                asChild
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8 py-6"
+              >
                 <Link href="/contact" className="flex items-center gap-2">
                   Get Started
                   <ArrowRight className="w-5 h-5" />
@@ -78,7 +87,9 @@ export default function ServicePage({ params }: ServicePageProps) {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
                     <Cog className="w-6 h-6 text-primary" />
-                    <CardTitle className="font-heading text-2xl">What's Included</CardTitle>
+                    <CardTitle className="font-heading text-2xl">
+                      What's Included
+                    </CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -98,7 +109,9 @@ export default function ServicePage({ params }: ServicePageProps) {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
                     <Target className="w-6 h-6 text-primary" />
-                    <CardTitle className="font-heading text-2xl">Key Benefits</CardTitle>
+                    <CardTitle className="font-heading text-2xl">
+                      Key Benefits
+                    </CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -125,7 +138,9 @@ export default function ServicePage({ params }: ServicePageProps) {
                 <CardHeader>
                   <div className="flex items-center gap-2 mb-2">
                     <Users className="w-6 h-6 text-primary" />
-                    <CardTitle className="font-heading text-2xl">Who It's For</CardTitle>
+                    <CardTitle className="font-heading text-2xl">
+                      Who It's For
+                    </CardTitle>
                   </div>
                 </CardHeader>
                 <CardContent>
@@ -143,7 +158,9 @@ export default function ServicePage({ params }: ServicePageProps) {
               {/* Process */}
               <Card className="bg-background">
                 <CardHeader>
-                  <CardTitle className="font-heading text-2xl">Our Process</CardTitle>
+                  <CardTitle className="font-heading text-2xl">
+                    Our Process
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
@@ -152,7 +169,9 @@ export default function ServicePage({ params }: ServicePageProps) {
                         <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-semibold text-sm flex-shrink-0">
                           {index + 1}
                         </div>
-                        <span className="text-muted-foreground mt-1">{step}</span>
+                        <span className="text-muted-foreground mt-1">
+                          {step}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -170,13 +189,19 @@ export default function ServicePage({ params }: ServicePageProps) {
                 Important Compliance Information
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                All investment and financial services are subject to market risks and regulatory guidelines. Our
-                recommendations are based on thorough analysis but past performance does not guarantee future results.
-                Please read all related documents carefully before making investment decisions. FinAdvisor Pro is
-                registered with SEBI (Registration No: INH000001234) and complies with all applicable regulations.
+                All investment and financial services are subject to market
+                risks and regulatory guidelines. Our recommendations are based
+                on thorough analysis but past performance does not guarantee
+                future results. Please read all related documents carefully
+                before making investment decisions. DD21 Tradings is registered
+                with SEBI (Registration No: INH000001234) and complies with all
+                applicable regulations.
               </p>
               <div className="mt-4">
-                <Link href="/disclaimer" className="text-primary hover:underline text-sm">
+                <Link
+                  href="/disclaimer"
+                  className="text-primary hover:underline text-sm"
+                >
                   Read Full Disclaimer →
                 </Link>
               </div>
@@ -191,11 +216,16 @@ export default function ServicePage({ params }: ServicePageProps) {
               Ready to Get Started with {service.title}?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Schedule a free consultation with our certified financial advisors to discuss your specific needs and
-              create a customized strategy.
+              Schedule a free consultation with our certified financial advisors
+              to discuss your specific needs and create a customized strategy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
+              <Button
+                asChild
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8 py-6"
+              >
                 <Link href="/contact">Schedule Free Consultation</Link>
               </Button>
               <Button
@@ -212,5 +242,5 @@ export default function ServicePage({ params }: ServicePageProps) {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

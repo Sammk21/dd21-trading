@@ -1,5 +1,13 @@
 import Link from "next/link"
-import { Facebook, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  Instagram,
+} from "lucide-react";
 import Image from "next/image";
 
 export function Footer() {
@@ -21,8 +29,7 @@ export function Footer() {
                   height={20}
                 />
                 <Image
-                  src= "/images/tradingTextB.png"
-                 
+                  src="/images/tradingTextB.png"
                   alt="logo"
                   width={100}
                   height={30}
@@ -36,10 +43,10 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link
-                href="#"
+                href="https://www.instagram.com/dd21trading/"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <Facebook className="w-5 h-5" />
+                <Instagram className="w-5 h-5" />
               </Link>
               <Link
                 href="#"
@@ -114,9 +121,9 @@ export function Footer() {
               <li className="flex items-start gap-2 text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-1" />
                 <span>
-                  123 Business District,
+                  Kopar Khairane,
                   <br />
-                  Mumbai, Maharashtra 400001
+                  Navi Mumbai, Maharashtra 400001
                 </span>
               </li>
             </ul>
