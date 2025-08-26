@@ -189,12 +189,31 @@ export function ContactForm() {
             <option value="">Select a service</option>
             <option value="investment-planning">Investment Planning</option>
             <option value="options-trading">Options Trading</option>
-            <option value="loans">Loans & Credit</option>
+            <option value="loans">Tax Planning</option>
             <option value="loans">Futures Trading</option>
             <option value="general">Spot Trading</option>
             <option value="general">General Inquiry</option>
           </select>
         </div>
+      </div>
+
+      <div>
+        <Label htmlFor="InvestmentAmount">Investment Amount</Label>
+        <select
+          id="InvestmentAmount"
+          name="InvestmentAmount"
+          value={formData.subject}
+          onChange={handleChange}
+          className="flex h-10 w-full rounded-md border border-input bg-gray-100 placeholder:text-gray-400 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          <option value="">Select investment range</option>
+          <option value="1-5">₹25k - ₹50k</option>
+          <option value="1-5">₹k50- ₹1L</option>
+          <option value="1-5">₹1L - ₹5L</option>
+          <option value="5-10">₹5L - ₹10L</option>
+          <option value="10-25">₹10L - ₹25L</option>
+          <option value="25+">₹25L+</option>
+        </select>
       </div>
 
       <div className="space-y-2">
