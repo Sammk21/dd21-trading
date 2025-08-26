@@ -7,7 +7,7 @@ export function CTASection() {
     <section className="py-20 bg-primary">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-heading font-bold text-3xl md:text-4xl text-primary-foreground mb-6">
-          Wat to make ₹1Cr/month click button below?
+          Want to know how to make ₹1Cr/month click button below?
         </h2>
         <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
           Get started with a free consultation and discover how our transparent,
