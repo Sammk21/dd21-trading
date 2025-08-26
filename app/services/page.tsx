@@ -17,8 +17,10 @@ export default function ServicesPage() {
               Comprehensive Financial Services
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              From investment planning to retirement strategies, we offer a complete suite of SEBI-compliant financial
-              services designed to help you achieve your financial goals with transparency and expertise.
+              From investment planning to retirement strategies, we offer a
+              complete suite of SEBI-compliant financial services designed to
+              help you achieve your financial goals with transparency and
+              expertise.
             </p>
             <Button asChild size="lg" className="text-lg px-8 py-6">
               <Link href="/contact" className="flex items-center gap-2">
@@ -39,15 +41,13 @@ export default function ServicesPage() {
               Need Personalized Guidance?
             </h2>
             <p className="text-xl text-muted-foreground mb-8">
-              Our certified financial advisors are ready to help you create a customized financial strategy that aligns
-              with your unique goals and circumstances.
+              Our certified financial advisors are ready to help you create a
+              customized financial strategy that aligns with your unique goals
+              and circumstances.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg">
                 <Link href="/contact">Schedule Free Consultation</Link>
-              </Button>
-              <Button asChild variant="outline" size="lg" className="bg-transparent">
-                <Link href="tel:+91-9876543210">Call +91-9876543210</Link>
               </Button>
             </div>
           </div>
@@ -55,5 +55,5 @@ export default function ServicesPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
