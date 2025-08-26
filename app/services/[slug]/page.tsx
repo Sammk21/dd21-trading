@@ -40,11 +40,11 @@ export default function ServicePage({ params }: ServicePageProps) {
   const IconComponent = service.icon;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-purple-50/30">
       <Navbar />
       <main>
         {/* Enhanced Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 pt-16 pb-20 lg:pt-20 lg:pb-28">
+        <section className="relative overflow-hidden bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 pt-16 pb-20 lg:pt-20 lg:pb-28">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div
@@ -68,7 +68,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                     className="bg-green-500/20 text-green-100 border-green-400/30 px-4 py-2 text-sm font-medium rounded-full backdrop-blur-sm"
                   >
                     <Shield className="w-4 h-4 mr-2" />
-                    SEBI Compliant
+                    Blockchain Verified
                   </Badge>
                 </div>
 
@@ -76,7 +76,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                 <h1 className="font-bold text-2xl md:text-3xl lg:text-4xl text-white mb-6 leading-tight">
                   {service.title}
                 </h1>
-                <p className="text-lg text-blue-100 leading-relaxed mb-8 max-w-3xl">
+                <p className="text-lg text-purple-100 leading-relaxed mb-8 max-w-3xl">
                   {service.longDescription}
                 </p>
 
@@ -85,10 +85,10 @@ export default function ServicePage({ params }: ServicePageProps) {
                   <Button
                     asChild
                     size="lg"
-                    className="text-lg px-8 py-4 bg-white text-blue-700 hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all duration-300 font-semibold rounded-xl"
+                    className="text-lg px-8 py-4 bg-white text-purple-700 hover:bg-purple-50 shadow-lg hover:shadow-xl transition-all duration-300 font-semibold rounded-xl"
                   >
                     <Link href="/contact" className="flex items-center gap-2">
-                      Get Started Free
+                      Start Trading Free
                       <ArrowRight className="w-5 h-5" />
                     </Link>
                   </Button>
@@ -100,7 +100,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                   >
                     <Link href="/contact" className="flex items-center gap-2">
                       <Clock className="w-5 h-5" />
-                      Book Consultation
+                      Book Crypto Analysis
                     </Link>
                   </Button>
                 </div>
@@ -117,12 +117,12 @@ export default function ServicePage({ params }: ServicePageProps) {
                     </div>
                     <span className="text-white font-semibold">4.9/5</span>
                   </div>
-                  <p className="text-blue-100 text-sm leading-relaxed">
-                    "Exceptional service with transparent communication and
-                    remarkable results. Highly recommended!"
+                  <p className="text-purple-100 text-sm leading-relaxed">
+                    "Outstanding crypto guidance with real-time insights and
+                    exceptional portfolio growth. Game-changing service!"
                   </p>
-                  <p className="text-blue-200 text-xs mt-2">
-                    - Based on 500+ reviews
+                  <p className="text-purple-200 text-xs mt-2">
+                    - Based on 500+ crypto trader reviews
                   </p>
                 </div>
               </div>
@@ -136,11 +136,11 @@ export default function ServicePage({ params }: ServicePageProps) {
             {/* Section Header */}
             <div className="text-center mb-16">
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Everything You Need to Succeed
+                Everything You Need to Master Crypto
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Comprehensive solutions designed to help you achieve your
-                financial goals with confidence.
+                Comprehensive crypto solutions designed to help you navigate the
+                digital asset markets with confidence and maximize your returns.
               </p>
             </div>
 
@@ -149,8 +149,8 @@ export default function ServicePage({ params }: ServicePageProps) {
               <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-gradient-to-br from-white to-gray-50">
                 <CardHeader className="pb-4">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center group-hover:bg-blue-200 transition-colors duration-300">
-                      <Cog className="w-6 h-6 text-blue-600" />
+                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center group-hover:bg-purple-200 transition-colors duration-300">
+                      <Cog className="w-6 h-6 text-purple-600" />
                     </div>
                     <CardTitle className="text-2xl lg:text-3xl font-bold text-gray-900">
                       What's Included
@@ -162,7 +162,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                     {service.features.map((feature, index) => (
                       <div
                         key={index}
-                        className="flex items-start gap-4 p-3 rounded-lg hover:bg-blue-50/50 transition-colors duration-200"
+                        className="flex items-start gap-4 p-3 rounded-lg hover:bg-purple-50/50 transition-colors duration-200"
                       >
                         <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
                           <CheckCircle className="w-4 h-4 text-green-600" />
@@ -195,8 +195,8 @@ export default function ServicePage({ params }: ServicePageProps) {
                         key={index}
                         className="flex items-start gap-4 p-3 rounded-lg hover:bg-green-50/50 transition-colors duration-200"
                       >
-                        <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <CheckCircle className="w-4 h-4 text-blue-600" />
+                        <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <CheckCircle className="w-4 h-4 text-purple-600" />
                         </div>
                         <span className="text-gray-700 leading-relaxed font-medium">
                           {benefit}
@@ -206,19 +206,20 @@ export default function ServicePage({ params }: ServicePageProps) {
                   </div>
                 </CardContent>
               </Card>
+
               {/* Who It's For */}
               <Card className="border-0 shadow-xl bg-white hover:shadow-2xl transition-all duration-300">
                 <CardHeader className="pb-6">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                      <Users className="w-6 h-6 text-purple-600" />
+                    <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+                      <Users className="w-6 h-6 text-orange-600" />
                     </div>
                     <CardTitle className="text-2xl lg:text-3xl font-bold text-gray-900">
                       Perfect For
                     </CardTitle>
                   </div>
                   <p className="text-gray-600">
-                    Designed specifically for these client profiles
+                    Designed specifically for these crypto enthusiast profiles
                   </p>
                 </CardHeader>
                 <CardContent>
@@ -226,10 +227,10 @@ export default function ServicePage({ params }: ServicePageProps) {
                     {service.whoItsFor.map((item, index) => (
                       <div
                         key={index}
-                        className="flex items-start gap-4 p-4 bg-purple-50/50 rounded-xl border-l-4 border-purple-200"
+                        className="flex items-start gap-4 p-4 bg-orange-50/50 rounded-xl border-l-4 border-orange-200"
                       >
-                        <div className="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                          <CheckCircle className="w-4 h-4 text-purple-600" />
+                        <div className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                          <CheckCircle className="w-4 h-4 text-orange-600" />
                         </div>
                         <span className="text-gray-700 leading-relaxed font-medium">
                           {item}
@@ -247,14 +248,14 @@ export default function ServicePage({ params }: ServicePageProps) {
                     Our Simple Process
                   </CardTitle>
                   <p className="text-gray-600">
-                    Step-by-step approach to your success
+                    Step-by-step approach to crypto success
                   </p>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
                     {service.process.map((step, index) => (
                       <div key={index} className="flex items-start gap-4">
-                        <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 shadow-md">
+                        <div className="w-10 h-10 bg-gradient-to-r from-purple-600 to-purple-700 rounded-xl flex items-center justify-center text-white font-bold text-lg flex-shrink-0 shadow-md">
                           {index + 1}
                         </div>
                         <div className="flex-1 pt-1">
@@ -262,7 +263,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                             {step}
                           </span>
                           {index < service.process.length - 1 && (
-                            <div className="w-0.5 h-8 bg-blue-200 ml-5 mt-4"></div>
+                            <div className="w-0.5 h-8 bg-purple-200 ml-5 mt-4"></div>
                           )}
                         </div>
                       </div>
@@ -277,31 +278,33 @@ export default function ServicePage({ params }: ServicePageProps) {
         {/* Enhanced Compliance Section */}
         <section className="py-12 bg-white border-t border-gray-100">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100 shadow-sm">
+            <div className="bg-gradient-to-r from-purple-50 to-indigo-50 p-8 rounded-2xl border border-purple-100 shadow-sm">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <Shield className="w-6 h-6 text-blue-600" />
+                <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Shield className="w-6 h-6 text-purple-600" />
                 </div>
                 <div>
                   <h3 className="font-bold text-xl text-gray-900 mb-3">
                     Regulatory Compliance & Risk Disclosure
                   </h3>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    All investment and financial services are subject to market
-                    risks and regulatory guidelines. Our recommendations are
-                    based on thorough analysis but past performance does not
-                    guarantee future results. Please read all related documents
-                    carefully before making investment decisions.
+                    All cryptocurrency trading and digital asset services are
+                    subject to high market volatility and regulatory changes.
+                    Our recommendations are based on thorough blockchain
+                    analysis but past crypto performance does not guarantee
+                    future results. Please understand the risks before trading
+                    digital assets.
                   </p>
                   <p className="text-sm text-gray-600 mb-4">
-                    DD21 Tradings is registered with SEBI (Registration No:
-                    INH000001234) and complies with all applicable regulations.
+                    CryptoTrader Pro is compliant with digital asset regulations
+                    and follows industry best practices for security and
+                    transparency.
                   </p>
                   <Link
                     href="/disclaimer"
-                    className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors duration-200"
+                    className="inline-flex items-center gap-2 text-purple-600 hover:text-purple-700 font-semibold transition-colors duration-200"
                   >
-                    Read Full Disclaimer
+                    Read Full Risk Disclaimer
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -311,7 +314,7 @@ export default function ServicePage({ params }: ServicePageProps) {
         </section>
 
         {/* Enhanced CTA Section */}
-        <section className="py-20 bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-800 relative overflow-hidden">
+        <section className="py-20 bg-gradient-to-r from-purple-600 via-purple-700 to-indigo-800 relative overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div
@@ -324,21 +327,22 @@ export default function ServicePage({ params }: ServicePageProps) {
 
           <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-bold text-4xl lg:text-5xl text-white mb-6 leading-tight">
-              Ready to Transform Your Financial Future?
+              Ready to Transform Your Crypto Portfolio?
             </h2>
-            <p className="text-xl lg:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Join thousands of satisfied clients who trust us with their
-              financial success. Schedule your free consultation today.
+            <p className="text-xl lg:text-2xl text-purple-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+              Join thousands of successful crypto traders who trust us with
+              their digital asset investments. Schedule your free crypto
+              consultation today.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button
                 asChild
                 size="lg"
-                className="text-lg px-10 py-4 bg-white text-blue-700 hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all duration-300 font-bold rounded-xl"
+                className="text-lg px-10 py-4 bg-white text-purple-700 hover:bg-purple-50 shadow-lg hover:shadow-xl transition-all duration-300 font-bold rounded-xl"
               >
                 <Link href="/contact" className="flex items-center gap-2">
-                  Start Your Free Consultation
+                  Start Your Free Crypto Analysis
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
@@ -348,20 +352,20 @@ export default function ServicePage({ params }: ServicePageProps) {
                 variant="outline"
                 className="text-lg px-8 py-4 border-2 border-white/30 text-black hover:bg-white/10 backdrop-blur-sm rounded-xl font-semibold transition-all duration-300"
               >
-                <Link href="/services">Explore All Services</Link>
+                <Link href="/services">Explore All Crypto Services</Link>
               </Button>
             </div>
 
             {/* Trust indicators */}
             <div className="mt-12 pt-8 border-t border-white/20">
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-blue-100">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 text-purple-100">
                 <div className="flex items-center gap-2">
                   <Shield className="w-5 h-5" />
-                  <span className="font-medium">SEBI Registered</span>
+                  <span className="font-medium">Blockchain Verified</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Users className="w-5 h-5" />
-                  <span className="font-medium">10,000+ Happy Clients</span>
+                  <span className="font-medium">10,000+ Crypto Traders</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Star className="w-5 h-5 fill-current text-yellow-400" />

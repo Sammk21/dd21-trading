@@ -6,7 +6,7 @@ const testimonials = [
     name: "Rajesh Kumar",
     role: "Business Owner",
     content:
-      "FinAdvisor Pro helped me diversify my portfolio and achieve consistent returns. Their transparent approach and SEBI compliance gave me complete confidence.",
+      "DD21 Tradings helped me diversify my portfolio and achieve consistent returns. Their transparent approach and SEBI compliance gave me complete confidence.",
     rating: 5,
   },
   {
@@ -30,7 +30,7 @@ const testimonials = [
       "Excellent tax planning advice that saved me significant money. The team is knowledgeable and truly cares about client success.",
     rating: 5,
   },
-]
+];
 
 export function TestimonialsSection() {
   return (

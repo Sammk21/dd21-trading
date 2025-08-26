@@ -37,54 +37,42 @@ const milestones = [
 
 const teamMembers = [
   {
-    name: "Rajesh Sharma",
+    name: "Darren Dias",
     role: "Founder & Chief Investment Officer",
     credentials: "CFA, MBA Finance",
-    experience: "15+ years",
+    experience: "8+ years",
     description:
       "Expert in portfolio management and investment strategies with extensive experience in Indian markets.",
     image: "/placeholder.svg?height=300&width=300",
   },
-  {
-    name: "Priya Patel",
-    role: "Senior Financial Planner",
-    credentials: "CFP, CA",
-    experience: "12+ years",
-    description: "Specializes in retirement planning and tax optimization with a client-first approach.",
-    image: "/placeholder.svg?height=300&width=300",
-  },
-  {
-    name: "Amit Kumar",
-    role: "Options Trading Specialist",
-    credentials: "NISM Certified, FRM",
-    experience: "10+ years",
-    description: "Expert in derivatives and options trading with focus on risk management strategies.",
-    image: "/placeholder.svg?height=300&width=300",
-  },
-]
+];
 
 const values = [
   {
     icon: Eye,
     title: "Transparency",
-    description: "Complete disclosure of fees, processes, and potential risks. No hidden charges or surprise costs.",
+    description:
+      "Complete disclosure of fees, processes, and potential risks. No hidden charges or surprise costs.",
   },
   {
     icon: Shield,
     title: "Compliance",
-    description: "Strict adherence to SEBI regulations and industry best practices for client protection.",
+    description:
+      "Strict adherence to SEBI regulations and industry best practices for client protection.",
   },
   {
     icon: Heart,
     title: "Client-First",
-    description: "Your financial success is our priority. We align our recommendations with your goals.",
+    description:
+      "Your financial success is our priority. We align our recommendations with your goals.",
   },
   {
     icon: Target,
     title: "Excellence",
-    description: "Continuous learning and improvement to provide the best financial advisory services.",
+    description:
+      "Continuous learning and improvement to provide the best financial advisory services.",
   },
-]
+];
 
 export default function AboutPage() {
   return (
@@ -97,10 +85,14 @@ export default function AboutPage() {
             <Badge variant="secondary" className="mb-6">
               SEBI Registered Investment Advisor
             </Badge>
-            <h1 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-6">About FinAdvisor Pro</h1>
+            <h1 className="font-heading font-bold text-4xl md:text-5xl text-foreground mb-6">
+              About DD21 Tradings
+            </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-              We are a SEBI-registered financial advisory firm committed to providing transparent, compliant, and
-              personalized financial solutions to help you achieve your financial goals with confidence.
+              We are a SEBI-registered financial advisory firm committed to
+              providing transparent, compliant, and personalized financial
+              solutions to help you achieve your financial goals with
+              confidence.
             </p>
             <Button asChild size="lg" className="text-lg px-8 py-6">
               <Link href="/contact" className="flex items-center gap-2">
@@ -126,9 +118,11 @@ export default function AboutPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground leading-relaxed">
-                      To democratize access to professional financial advisory services by providing transparent,
-                      SEBI-compliant, and personalized financial solutions that empower individuals and businesses to
-                      achieve their financial goals with confidence and peace of mind.
+                      To democratize access to professional financial advisory
+                      services by providing transparent, SEBI-compliant, and
+                      personalized financial solutions that empower individuals
+                      and businesses to achieve their financial goals with
+                      confidence and peace of mind.
                     </p>
                   </CardContent>
                 </Card>
@@ -142,9 +136,11 @@ export default function AboutPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground leading-relaxed">
-                      To become India's most trusted financial advisory firm, known for our unwavering commitment to
-                      transparency, ethical practices, and client success. We envision a future where every individual
-                      has access to professional financial guidance.
+                      To become India's most trusted financial advisory firm,
+                      known for our unwavering commitment to transparency,
+                      ethical practices, and client success. We envision a
+                      future where every individual has access to professional
+                      financial guidance.
                     </p>
                   </CardContent>
                 </Card>
@@ -152,21 +148,27 @@ export default function AboutPage() {
 
               {/* Values */}
               <div>
-                <h2 className="font-heading font-bold text-3xl text-foreground mb-8">Our Core Values</h2>
+                <h2 className="font-heading font-bold text-3xl text-foreground mb-8">
+                  Our Core Values
+                </h2>
                 <div className="space-y-6">
                   {values.map((value, index) => {
-                    const IconComponent = value.icon
+                    const IconComponent = value.icon;
                     return (
                       <div key={index} className="flex items-start gap-4">
                         <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
                           <IconComponent className="w-6 h-6 text-primary" />
                         </div>
                         <div>
-                          <h3 className="font-heading font-semibold text-lg text-foreground mb-2">{value.title}</h3>
-                          <p className="text-muted-foreground leading-relaxed">{value.description}</p>
+                          <h3 className="font-heading font-semibold text-lg text-foreground mb-2">
+                            {value.title}
+                          </h3>
+                          <p className="text-muted-foreground leading-relaxed">
+                            {value.description}
+                          </p>
                         </div>
                       </div>
-                    )
+                    );
                   })}
                 </div>
               </div>
@@ -178,9 +180,12 @@ export default function AboutPage() {
         <section className="py-16 bg-muted">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">Our Journey</h2>
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
+                Our Journey
+              </h2>
               <p className="text-xl text-muted-foreground">
-                Key milestones in our mission to provide transparent financial advisory services
+                Key milestones in our mission to provide transparent financial
+                advisory services
               </p>
             </div>
 
@@ -191,18 +196,26 @@ export default function AboutPage() {
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold">
                       {milestone.year.slice(-2)}
                     </div>
-                    {index < milestones.length - 1 && <div className="w-0.5 h-16 bg-border mt-4" />}
+                    {index < milestones.length - 1 && (
+                      <div className="w-0.5 h-16 bg-border mt-4" />
+                    )}
                   </div>
                   <Card className="flex-1 bg-background">
                     <CardHeader>
                       <div className="flex items-center gap-2 mb-2">
                         <Calendar className="w-5 h-5 text-primary" />
-                        <span className="text-sm text-primary font-medium">{milestone.year}</span>
+                        <span className="text-sm text-primary font-medium">
+                          {milestone.year}
+                        </span>
                       </div>
-                      <CardTitle className="font-heading text-xl">{milestone.title}</CardTitle>
+                      <CardTitle className="font-heading text-xl">
+                        {milestone.title}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-muted-foreground">{milestone.description}</p>
+                      <p className="text-muted-foreground">
+                        {milestone.description}
+                      </p>
                     </CardContent>
                   </Card>
                 </div>
@@ -212,12 +225,15 @@ export default function AboutPage() {
         </section>
 
         {/* Team Section */}
-        <section className="py-16">
+        {/* <section className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">Meet Our Team</h2>
+              <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
+                Meet Our Team
+              </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Our certified financial advisors bring decades of combined experience in Indian financial markets
+                Our certified financial advisors bring decades of combined
+                experience in Indian financial markets
               </p>
             </div>
 
@@ -232,7 +248,9 @@ export default function AboutPage() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <CardTitle className="font-heading text-xl">{member.name}</CardTitle>
+                    <CardTitle className="font-heading text-xl">
+                      {member.name}
+                    </CardTitle>
                     <p className="text-primary font-medium">{member.role}</p>
                     <div className="flex flex-wrap justify-center gap-2 mt-2">
                       <Badge variant="outline">{member.credentials}</Badge>
@@ -240,41 +258,56 @@ export default function AboutPage() {
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground leading-relaxed">{member.description}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {member.description}
+                    </p>
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Trust Indicators */}
         <section className="py-16 bg-muted">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-8">Why Clients Trust Us</h2>
+            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-8">
+              Why Clients Trust Us
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                   <Shield className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-heading font-semibold text-xl text-foreground mb-2">SEBI Registered</h3>
+                <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
+                  SEBI Registered
+                </h3>
                 <p className="text-muted-foreground">
-                  Fully compliant with regulatory requirements and client protection standards
+                  Fully compliant with regulatory requirements and client
+                  protection standards
                 </p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mb-4">
                   <Users className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="font-heading font-semibold text-xl text-foreground mb-2">1000+ Clients</h3>
-                <p className="text-muted-foreground">Trusted by over 1000 individuals and businesses across India</p>
+                <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
+                  1000+ Clients
+                </h3>
+                <p className="text-muted-foreground">
+                  Trusted by over 1000 individuals and businesses across India
+                </p>
               </div>
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                   <Award className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-heading font-semibold text-xl text-foreground mb-2">Expert Team</h3>
-                <p className="text-muted-foreground">Certified professionals with decades of combined experience</p>
+                <h3 className="font-heading font-semibold text-xl text-foreground mb-2">
+                  Expert Team
+                </h3>
+                <p className="text-muted-foreground">
+                  Certified professionals with decades of combined experience
+                </p>
               </div>
             </div>
           </div>
@@ -287,11 +320,17 @@ export default function AboutPage() {
               Ready to Start Your Financial Journey?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Join over 1000 satisfied clients who trust us with their financial future. Schedule a free consultation to
-              discuss your goals and create a personalized strategy.
+              Join over 1000 satisfied clients who trust us with their financial
+              future. Schedule a free consultation to discuss your goals and
+              create a personalized strategy.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" variant="secondary" className="text-lg px-8 py-6">
+              <Button
+                asChild
+                size="lg"
+                variant="secondary"
+                className="text-lg px-8 py-6"
+              >
                 <Link href="/contact">Schedule Free Consultation</Link>
               </Button>
               <Button
@@ -308,5 +347,5 @@ export default function AboutPage() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }

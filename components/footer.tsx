@@ -48,18 +48,6 @@ export function Footer() {
               >
                 <Instagram className="w-5 h-5" />
               </Link>
-              {/* <Link
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-              </Link>
-              <Link
-                href="#"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-              </Link> */}
             </div>
           </div>
 
@@ -110,10 +98,6 @@ export function Footer() {
               Contact Info
             </h3>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-muted-foreground">
-                <Phone className="w-4 h-4" />
-                <span>+91-8451077107</span>
-              </li>
               <li className="flex items-center gap-2 text-muted-foreground">
                 <Mail className="w-4 h-4" />
                 <span>info@dd21trading.com</span>
