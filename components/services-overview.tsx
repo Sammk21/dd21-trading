@@ -116,7 +116,7 @@ const ServiceCard = ({
               {service.description}
             </p>
             <Link
-              href={`/services/${service.slug}`}
+              href={`/services/${serviceType}/${service.slug}`}
               className="w-full bg-gray-900 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors flex items-center justify-center space-x-2"
             >
               <span>Learn More</span>
@@ -146,7 +146,7 @@ const ServiceCard = ({
         </p>
 
         <Link
-          href={`/services/${service.slug}`}
+          href={`/services/${serviceType}/${service.slug}`}
           className="w-full bg-gray-100 text-gray-900 py-2.5 rounded-lg text-sm font-medium hover:bg-gray-900 hover:text-white transition-all duration-300 flex items-center justify-center space-x-2 group-hover:bg-gray-900 group-hover:text-white"
         >
           <span>Learn More</span>

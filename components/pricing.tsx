@@ -367,7 +367,7 @@ const PricingPage = () => {
                     <select className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                       <option value="">Select investment range</option>
                       <option value="1-5">₹25k - ₹50k</option>
-                      <option value="1-5">₹k50- ₹1L</option>
+                      <option value="1-5">₹50k- ₹1L</option>
                       <option value="1-5">₹1L - ₹5L</option>
                       <option value="5-10">₹5L - ₹10L</option>
                       <option value="10-25">₹10L - ₹25L</option>

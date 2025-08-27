@@ -296,7 +296,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                     digital assets.
                   </p>
                   <p className="text-sm text-gray-600 mb-4">
-                    CryptoTrader Pro is compliant with digital asset regulations
+                    dd21Trading is compliant with digital asset regulations
                     and follows industry best practices for security and
                     transparency.
                   </p>
