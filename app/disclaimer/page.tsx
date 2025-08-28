@@ -36,10 +36,10 @@ export default function DisclaimerPage() {
               </CardHeader>
               <CardContent className="prose prose-gray max-w-none">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  DD21 Tradings is a SEBI registered Investment Advisor
-                  (Registration No: INH000001234). This disclaimer contains
-                  important information about our services, associated risks,
-                  and regulatory compliance requirements.
+                  DD21 Tradings is a SEBI registered Investment Advisor (CIN:
+                  U67200MH2004PTC144103). This disclaimer contains important
+                  information about our services, associated risks, and
+                  regulatory compliance requirements.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   Investment in securities market are subject to market risks.
@@ -130,10 +130,7 @@ export default function DisclaimerPage() {
               <CardContent>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    <strong>SEBI Registration:</strong> INH000001234
-                  </p>
-                  <p>
-                    <strong>CIN:</strong> U74999MH2020PTC123456
+                    <strong>CIN:</strong> U67200MH2004PTC144103
                   </p>
                   <p>
                     <strong>Registered Office:</strong>Kopar Khairane, Navi

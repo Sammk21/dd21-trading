@@ -199,7 +199,7 @@ export default function ContactPage() {
                 <CardContent>
                   <p className="text-muted-foreground">
                     Yes, we are registered with SEBI as an Investment Advisor
-                    (Registration No: INH000001234). You can verify our
+                    (CIN: U67200MH2004PTC144103). You can verify our
                     registration on the SEBI website. This ensures your
                     investments are protected under regulatory guidelines.
                   </p>

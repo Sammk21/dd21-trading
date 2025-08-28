@@ -194,7 +194,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                 on thorough analysis but past performance does not guarantee
                 future results. Please read all related documents carefully
                 before making investment decisions. DD21 Tradings is registered
-                with SEBI (Registration No: INH000001234) and complies with all
+                with SEBI (CIN: U67200MH2004PTC144103) and complies with all
                 applicable regulations.
               </p>
               <div className="mt-4">

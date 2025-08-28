@@ -118,9 +118,7 @@ export function Footer() {
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm mb-4 md:mb-0">
             <p>© 2024 dd21 Trading. All rights reserved.</p>
-            <p className="mt-1">
-              SEBI Registration No: INH000001234 | CIN: U74999MH2020PTC123456
-            </p>
+            <p className="mt-1">CIN: U67200MH2004PTC144103</p>
           </div>
           <div className="flex space-x-6 text-sm">
             <Link

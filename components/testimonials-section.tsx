@@ -3,31 +3,31 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Rajesh Kumar",
-    role: "Business Owner",
+    name: "Pravin",
+    // role: "Business Owner",
     content:
-      "DD21 Tradings helped me diversify my portfolio and achieve consistent returns. Their transparent approach and SEBI compliance gave me complete confidence.",
+      "Their work is truly inspiring! My trading journey has gotten a boost in it and i have gotten way more successful with the way ive been trading. Not only have i become profitable but the mentorship program has taught me lots of trading concepts.",
     rating: 5,
   },
   {
-    name: "Priya Sharma",
-    role: "Software Engineer",
+    name: "Sapna",
+    // role: "Software Engineer",
     content:
-      "The retirement planning service was exactly what I needed. Clear explanations, no hidden fees, and a strategy that fits my goals perfectly.",
+      "The 1v1 mentorship program is genuinely worth it. It has genuinely given me so much more knowledge on why to take entries in the market , when to take them and the exact stop losses and profits to keep. Their signals generate me profit but also give me good knowledge on the markets",
     rating: 5,
   },
   {
-    name: "Amit Patel",
-    role: "Doctor",
+    name: "Manish",
+    // role: "Doctor",
     content:
-      "Their options trading guidance helped me understand the market better. Professional, ethical, and always available for questions.",
+      "Excellent community he has built. In the 1v1 mentorship i had direct access with the owner of the consultancy. His trades are genuinely life changing. Its 90% profitable also but the knowledge i have been provided is worth it.",
     rating: 5,
   },
   {
-    name: "Sneha Reddy",
-    role: "Entrepreneur",
+    name: "Aarav",
+    // role: "Entrepreneur",
     content:
-      "Excellent tax planning advice that saved me significant money. The team is knowledgeable and truly cares about client success.",
+      "Excellent community he has built. In the 1v1 mentorship i had direct access with the owner of the consultancy. His trades are genuinely life changing. Its 90% profitable also but the knowledge i have been provided is worth it.",
     rating: 5,
   },
 ];
@@ -38,9 +38,12 @@ export function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">What Our Clients Say</h2>
+          <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
+            What Our Clients Say
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Real experiences from clients who trust us with their financial future
+            Real experiences from clients who trust us with their financial
+            future
           </p>
         </div>
 
@@ -57,12 +60,16 @@ export function TestimonialsSection() {
                 </div>
 
                 {/* Testimonial Content */}
-                <p className="text-muted-foreground mb-4 leading-relaxed">"{testimonial.content}"</p>
+                <p className="text-muted-foreground mb-4 leading-relaxed">
+                  "{testimonial.content}"
+                </p>
 
                 {/* Author */}
                 <div>
-                  <p className="font-semibold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <p className="font-semibold text-foreground">
+                    {testimonial.name}
+                  </p>
+                  {/* <p className="text-sm text-muted-foreground">{testimonial.role}</p> */}
                 </div>
               </CardContent>
             </Card>
@@ -70,5 +77,5 @@ export function TestimonialsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -316,10 +316,10 @@ export default function PrivacyPage() {
                     <p>
                       <strong>Email:</strong>{" "}
                       <a
-                        href="mailto:privacy@finadvisorpro.com"
+                        href="mailto:privacy@dd21trading.com"
                         className="text-primary hover:underline"
                       >
-                        privacy@finadvisorpro.com
+                        privacy@dd21trading.com
                       </a>
                     </p>
                     <p>
